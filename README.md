@@ -20,8 +20,8 @@ git clone https://git.enigmacamp.com/enigma-camp/class-mandiri/dirgantara-p.-sia
 
 ### Design 
 #### Link access design using XD and Zeplin
-```clone
-https://scene.zeplin.io/project/60edb011aa6e601237588500
-```
+
+<a href="https://scene.zeplin.io/project/60edb011aa6e601237588500">Visit Design Gold Market!</a>
+
 ![Screenshoot](/image-screen/design.png)
 

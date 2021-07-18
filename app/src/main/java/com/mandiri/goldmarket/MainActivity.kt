@@ -8,7 +8,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.splash)
 //        setContentView(R.layout.greeting)
-        setContentView(R.layout.login)
-//        setContentView(R.layout.register)
+//        setContentView(R.layout.login)
+        setContentView(R.layout.register)
     }
 }

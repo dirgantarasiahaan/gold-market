@@ -11,8 +11,17 @@ git clone https://git.enigmacamp.com/enigma-camp/class-mandiri/dirgantara-p.-sia
 
 ### Screen
 <p align="col">
-![Screenshoot](/image-screen/splash.png)
-![Screenshoot](/image-screen/greeting.png)
-![Screenshoot](/image-screen/login.png)
-![Screenshoot](/image-screen/register.png)
+<img src="/image-screen/splash.png" width="250" title="hover text">
+<img src="/image-screen/greeting.png" width="250" title="hover text">
+<img src="/image-screen/login.png" width="250" title="hover text">
+<img src="/image-screen/register.png" width="250" title="hover text">
 </p>
+
+
+### Design 
+#### Link access design using XD and Zeplin
+```clone
+zpl://screen?sid=60f2eff0f4f41f17c5fdea4e&pid=60edb011aa6e601237588500
+```
+![Screenshoot](/image-screen/design.png)
+

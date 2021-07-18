@@ -42,7 +42,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <EditText
-        android:id="@+id/lastname"
+        android:id="@+id/pass"
         android:layout_width="185dp"
         android:layout_height="39dp"
         android:layout_marginStart="16dp"

@@ -15,4 +15,7 @@
     <string name="create_account">Create Account</string>
     <string name="register">REGISTER</string>
     <string name="address">address</string>
+    <string name="ask_register">Create account ? Sign up!</string>
+    <string name="remember_me">Remember me ?</string>
+
 </resources>

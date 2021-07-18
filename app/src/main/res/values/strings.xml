@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Gold Market</string>
+    <string name="splash_description">Splash</string>
+    <string name="greeting_text">Selamat Datang</string>
+    <string name="greeting_text2">Nabung Emas? disini saja</string>
+    <string name="button_mulai">MULAI</string>
+    <string name="login">LOGIN</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="firstname">firstname</string>
+    <string name="lastname">lastname</string>
+    <string name="email">email</string>
+    <string name="status">status</string>
+    <string name="birthdate">birthdate</string>
+    <string name="create_account">Create Account</string>
+    <string name="register">REGISTER</string>
+    <string name="address">address</string>
+</resources>

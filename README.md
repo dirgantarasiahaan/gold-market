@@ -21,7 +21,7 @@ git clone https://git.enigmacamp.com/enigma-camp/class-mandiri/dirgantara-p.-sia
 ### Design 
 #### Link access design using XD and Zeplin
 ```clone
-zpl://screen?sid=60f2eff0f4f41f17c5fdea4e&pid=60edb011aa6e601237588500
+https://scene.zeplin.io/project/60edb011aa6e601237588500
 ```
 ![Screenshoot](/image-screen/design.png)
 

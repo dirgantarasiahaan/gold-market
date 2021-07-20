@@ -15,7 +15,11 @@
     <string name="create_account">Create Account</string>
     <string name="register">REGISTER</string>
     <string name="address">address</string>
-    <string name="ask_register">Create account ? Sign up!</string>
+    <string name="ask_register">Create account ?</string>
     <string name="remember_me">Remember me ?</string>
-
+    <string name="sign_in_label">Sign In</string>
+    <string name="sign_up_label">Sign up</string>
+    <string name="have_account">Already have account?</string>
+    <string name="failed_register">Field cant be empty!</string>
+    <string name="invalid_account">Invalid username and password, try again!</string>
 </resources>

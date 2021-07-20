@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("kotlin-android")
+    kotlin("android.extensions")
+    kotlin("android")
 }
 
 android {
@@ -33,12 +35,21 @@ android {
     }
 }
 
+val kotlin_coroutine_version = "1.3.1"
+
 dependencies {
-    implementation(AppDependencies.kotlinStdlib)
-    implementation(AppDependencies.kotlinCore)
-    implementation(AppDependencies.appCompat)
-    implementation(AppDependencies.materialDesign)
-    implementation(AppDependencies.constraintLayout)
+//    implementation(AppDependencies.kotlinStdlib)
+//    implementation(AppDependencies.kotlinCore)
+//    implementation(AppDependencies.appCompat)
+//    implementation(AppDependencies.materialDesign)
+//    implementation(AppDependencies.constraintLayout)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutine_version")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutine_version")
+    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    implementation("androidx.appcompat:appcompat:1.3.0")
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.10")
+    implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     testImplementation(AppDependencies.jUnit)
     androidTestImplementation(AppDependencies.extJunit)
     androidTestImplementation(AppDependencies.expresso)

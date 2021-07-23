@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_home.view.*
 import kotlinx.android.synthetic.main.activity_sign_in.*
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
@@ -25,7 +24,7 @@ class SignInActivity : AppCompatActivity() {
 
         btnSignUp = findViewById(R.id.btn_signup)
         btnSignUp.setOnClickListener {
-            startActivity(Intent(this, SignUpActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
 
 
@@ -34,7 +33,7 @@ class SignInActivity : AppCompatActivity() {
 
             if (username_input.editText?.text.toString().equals(username) &&
                 password_input.editText?.text.toString().equals(password)){
-                Intent(this, HomeActivity::class.java).also { intent ->
+                Intent(this, MainActivity::class.java).also { intent ->
                     intent.putExtra(TAG_NAME, username_input.editText?.text.toString())
                     startActivity(intent)
                 }

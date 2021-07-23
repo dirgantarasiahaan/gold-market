@@ -22,4 +22,6 @@
     <string name="have_account">Already have account?</string>
     <string name="failed_register">Field cant be empty!</string>
     <string name="invalid_account">Invalid username and password, try again!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

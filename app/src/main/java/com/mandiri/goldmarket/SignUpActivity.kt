@@ -26,15 +26,13 @@ class SignUpActivity : AppCompatActivity() {
             finish()
         }
 
-
-
         registerBtn = findViewById(R.id.btn_register)
         registerBtn.setOnClickListener{
             if (username_text.editText?.text.toString().isNotBlank() &&
                     password_text.editText?.text.toString().isNotBlank() &&
                     firstname_text.editText?.text.toString().isNotBlank() &&
                     lastname_text.editText?.text.toString().isNotBlank()){
-                Intent(this, HomeActivity::class.java).also { intent ->
+                Intent(this, MainActivity::class.java).also { intent ->
                     intent.putExtra(SignUpActivity.TAG_NAME, username_text.editText?.text.toString())
                     startActivity(intent)
                 }

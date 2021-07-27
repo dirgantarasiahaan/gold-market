@@ -1,5 +1,5 @@
 # ChallengeAndroid-Layout
-How to implement activity intent in project
+How to implement navigation in project
 
 ### How to run whis project
 1. clone this project using comment below:

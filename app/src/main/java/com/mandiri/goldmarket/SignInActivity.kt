@@ -30,7 +30,6 @@ class SignInActivity : AppCompatActivity() {
 
         btnLogin = findViewById(R.id.btn_login)
         btnLogin.setOnClickListener{
-
             if (username_input.editText?.text.toString().equals(username) &&
                 password_input.editText?.text.toString().equals(password)){
                 Intent(this, MainActivity::class.java).also { intent ->
@@ -44,6 +43,7 @@ class SignInActivity : AppCompatActivity() {
         }
 
     }
+
 
     companion object {
         const val TAG_NAME = "USERNAME"

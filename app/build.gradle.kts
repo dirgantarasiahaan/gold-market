@@ -18,6 +18,10 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
@@ -53,6 +57,8 @@ dependencies {
     implementation("androidx.fragment:fragment-ktx:1.4.0-alpha04")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
     testImplementation(AppDependencies.jUnit)
     androidTestImplementation(AppDependencies.extJunit)
     androidTestImplementation(AppDependencies.expresso)

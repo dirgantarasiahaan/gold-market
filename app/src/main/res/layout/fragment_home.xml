@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-
     <TextView
         android:id="@+id/title_pocket"
         android:layout_width="0dp"
@@ -164,7 +163,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonBuy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -172,7 +171,7 @@
                 android:text="Jual Emas" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/buttonSell"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

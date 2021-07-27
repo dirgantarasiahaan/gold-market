@@ -12,11 +12,7 @@ class ProfileFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
     }
-
-
 
     fun updateUsername(username: String) {
         user_profile_name.text = username

@@ -12,16 +12,16 @@ git clone https://git.enigmacamp.com/enigma-camp/class-mandiri/dirgantara-p.-sia
 ### Screen
 <p align="col">
     <p align="col"> 
-    <p><strong>invalid login</p>
-    <img src="/image-screen/invalid login.png" width="250" title="hover text">
+    <p><strong>Home</p>
+    <img src="/image-screen/nav-home.png" width="250" title="hover text">
     </p>
         <p align="col"> 
-        <p><strong>invalid register</p>
-    <img src="/image-screen/failed register.png" width="250" title="hover text">
+        <p><strong>History</p>
+    <img src="/image-screen/nav-history.png" width="250" title="hover text">
     </p>
     <p align="col"> 
-    <p><strong>success login and register (using intent parsing username in home activity)</p>
-    <img src="/image-screen/success login and register.png" width="250" title="hover text">
+    <p><strong>Profile</p>
+    <img src="/image-screen/nav-profile.png" width="250" title="hover text">
     </p>
 </p>
 

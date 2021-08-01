@@ -34,6 +34,7 @@ class ProfileFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        activity?.title = "Pocket";
         viewModel = ViewModelProvider(this).get(ProfileViewModel::class.java)
         repository = ProfileRepositoryImpl()
         binding = FragmentProfileBinding.inflate(layoutInflater,container, false)

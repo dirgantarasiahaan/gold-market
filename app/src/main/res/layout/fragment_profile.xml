@@ -19,30 +19,28 @@
             android:id="@+id/profile_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ebca0707"
+            android:background="@color/primary"
             android:elevation="0dp"
             android:paddingBottom="24dp">
 
 
             <TextView
-                android:id="@+id/user_profile_name"
+                android:id="@+id/profile_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="160dp"
-                android:text="Leo Geprek"
                 android:textColor="#fff"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/user_profile_short_bio"
+                android:id="@+id/job_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/user_profile_name"
+                android:layout_below="@+id/profile_name"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
-                android:text="Android Mobile Developer"
                 android:textColor="#fff"
                 android:textSize="14sp" />
 

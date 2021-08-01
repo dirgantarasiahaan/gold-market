@@ -3,11 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/splashScreenFragment">
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.mandiri.goldmarket.HomeFragment"
+        android:name="com.mandiri.goldmarket.persentation.ui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,16 +16,40 @@
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
-        android:name="com.mandiri.goldmarket.HistoryFragment"
+        android:name="com.mandiri.goldmarket.persentation.ui.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.mandiri.goldmarket.ProfileFragment"
+        android:name="com.mandiri.goldmarket.persentation.ui.ProfileFragment"
         android:label="ProfileFragment" />
     <fragment
         android:id="@+id/pocketFragment"
-        android:name="com.mandiri.goldmarket.PocketFragment"
+        android:name="com.mandiri.goldmarket.persentation.ui.PocketFragment"
         android:label="fragment_pocket"
         tools:layout="@layout/fragment_pocket" />
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.mandiri.goldmarket.persentation.ui.SplashScreenFragment"
+        android:label="SplashScreenFragment" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.mandiri.goldmarket.persentation.ui.WelcomeFragment"
+        android:label="WelcomeFragment" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.mandiri.goldmarket.persentation.ui.SignInFragment"
+        android:label="SignInFragment" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.mandiri.goldmarket.persentation.ui.SignUpFragment"
+        android:label="SignUpFragment" />
 </navigation>

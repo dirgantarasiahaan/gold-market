@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeFragment">
+    tools:context=".persentation.ui.HomeFragment">
 
     <TextView
         android:id="@+id/title_pocket"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/totalPrice"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -31,7 +31,6 @@
         android:layout_marginEnd="16dp"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:text="RP 999.999.999"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/totalPrice" />
 
     <TextView
         android:id="@+id/total_pocket"
@@ -137,21 +136,19 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/priceSell"
                 android:layout_width="209dp"
                 android:layout_height="58dp"
                 android:gravity="center"
-                android:text="RP 888.777.666"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/priceBuy"
                 android:layout_width="179dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="RP 888.777.666"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 

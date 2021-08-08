@@ -10,9 +10,9 @@ class ProfileViewModel: ViewModel() {
 
     private lateinit var repository: ProfileRepository
 
-    private var _profileLiveData = MutableLiveData<Profile>()
+        private var _profileLiveData = MutableLiveData<Profile>()
 
-    val priceLiveData: LiveData<Profile>
+    val profileLiveData: LiveData<Profile>
         get() = _profileLiveData
 
     private fun getPriceFromRepository() = repository.getProfile()

@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
+import androidx.navigation.NavOptions
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
@@ -23,10 +24,40 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        hideBottomNav()
         navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host) as NavHostFragment
         navController = navHostFragment.findNavController()
-        binding.bottomNavigationView.setupWithNavController(navController)
+
+        binding.apply {
+            hideBottomNav()
+            bottomNavigationView.setOnItemSelectedListener {
+                when (it.itemId) {
+                    R.id.homeFragmentMenu -> {
+                        showBottomNav()
+                        navController.navigate(
+                            R.id.homeFragment, null,
+                            NavOptions.Builder().setPopUpTo(R.id.nav_graph, true).build()); true
+                    }
+                    R.id.historyFragmentMenu -> {
+                        showBottomNav()
+                        navController.navigate(
+                            R.id.historyFragment, null,
+                            NavOptions.Builder().setPopUpTo(R.id.nav_graph, true).build());true
+                    }
+                    R.id.profileFragmentMenu -> {
+                        showBottomNav()
+                        navController.navigate(
+                            R.id.profileFragment, null,
+                            NavOptions.Builder().setPopUpTo(R.id.nav_graph, true).build());true
+                    }
+                    else -> {
+                        hideBottomNav()
+                        false
+                    }
+                }
+            }
+        }
+
+//        binding.bottomNavigationView.setupWithNavController(navController)
     }
 
     fun findUsername(signInUsername: String, signUpUsername: String): String{

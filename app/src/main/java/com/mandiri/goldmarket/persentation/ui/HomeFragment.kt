@@ -59,7 +59,7 @@ class HomeFragment : Fragment() {
         add_pocket.setOnClickListener{
             findNavController().navigate(
                 R.id.pocketFragment, null,
-                NavOptions.Builder().setPopUpTo(R.id.action_homeFragment_to_pocketFragment, true).build()
+                NavOptions.Builder().setPopUpTo(R.id.pocketFragment, true).build()
             )
         }
     }

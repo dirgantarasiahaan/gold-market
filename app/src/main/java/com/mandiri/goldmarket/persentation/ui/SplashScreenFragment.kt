@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.NavOptions
 import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 import com.mandiri.goldmarket.MainActivity
 import com.mandiri.goldmarket.R
 
@@ -27,7 +29,10 @@ class SplashScreenFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         (activity as MainActivity).hideBottomNav()
         Handler().postDelayed({
-            Navigation.findNavController(view).navigate(R.id.action_splashScreenFragment_to_welcomeFragment)
+            findNavController().navigate(
+                R.id.welcomeFragment, null,
+                NavOptions.Builder().setPopUpTo(R.id.welcomeFragment, true).build()
+            )
         }, 2000)
     }
 

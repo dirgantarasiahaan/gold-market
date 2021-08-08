@@ -47,13 +47,17 @@ class ProfileFragment : Fragment() {
         viewModel.setRepository(repository)
         viewModel.getData()
         subscribe()
+        binding.apply {
+            lifecycleOwner = this@ProfileFragment
+            profileViewModel = viewModel
+        }
     }
 
 
     private fun subscribe(){
-        viewModel.priceLiveData.observe(requireActivity(), {
-            binding.profileName.text = it.username
-            binding.jobName.text = it.job
+        viewModel.profileLiveData.observe(requireActivity(), {
+//            binding.profileName.text = it.username
+//            binding.jobName.text = it.job
         })
     }
 }

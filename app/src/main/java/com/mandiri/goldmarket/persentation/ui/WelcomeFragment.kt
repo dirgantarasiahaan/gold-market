@@ -34,7 +34,7 @@ class WelcomeFragment : Fragment() {
             mulai_button.setOnClickListener{
                 findNavController().navigate(
                     R.id.signInFragment, null,
-                    NavOptions.Builder().setPopUpTo(R.id.action_welcomeFragment_to_signInFragment, true).build()
+                    NavOptions.Builder().setPopUpTo(R.id.signInFragment, true).build()
                 )
             }
         }
